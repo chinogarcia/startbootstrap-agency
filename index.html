@@ -34,6 +34,14 @@
 </head>
 
 <body id="page-top" class="index">
+<script>(function(){
+  var d = document, s = d.getElementsByTagName('script')[0], js = d.getElementById('olap-jssdk');
+  if (js) return;
+  js = d.createElement('SCRIPT');
+  js.id = 'olap-jssdk';
+  js.src = '//plus.ola.com.ar/embed.js?tok=964b0d7342d5771284e5b1e20e5e35fb';
+  s.parentNode.insertBefore(js, s);
+}())</script>
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -77,9 +85,11 @@
     <!-- Header -->
     <header>
         <div class="container">
+
             <div class="intro-text">
                 <div class="intro-lead-in">Bienvenidos</div>
-                <div class="intro-heading">Elegí tu próximo viaje</div>
+                <div class="intro-heading">Elegí tu próximo viaje</div> 
+<!--                 <div id="olap-search" data-olap-layout="1" data-olap-width="400" data-olap-url="http://www.auster.tur.ar/resultado.html" data-olap-tabs="5"></div>      -->                    
                 <a href="#services" class="page-scroll btn btn-xl">¿Qué buscas?</a>
             </div>
         </div>
@@ -430,7 +440,8 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar Consulta</button>
+                                <button type="submit" class="btn btn-xl">Enviar Consulta<i id="loading-image" class="fa fa-circle-o-notch fa-spin" style="font-size:24px; display:none"></i></button>
+
                             </div>
                         </div>
                     </form>
