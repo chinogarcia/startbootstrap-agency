@@ -35,3 +35,7 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE) license.
+
+# Notas propias
+
+Un buen tamaño de imágen para los paquetes es 1920 × 1080, usamos ese tamaño para que se vean todas las imágenes iguales
